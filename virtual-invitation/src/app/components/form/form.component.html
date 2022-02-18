@@ -1,0 +1,48 @@
+<body>
+    <div id="login">
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12" style="margin-top: 100px">
+                        <form id="login-form" class="form" (ngSubmit)="onCreate()" method="post">
+                            <h3 class="text-center text-info">¡Inscríbite y reserva tu lugar ahora!</h3>
+                            <div class="form-group">
+                                <label for="name" class="text-info">Nombre</label><br>
+                                <input type="text" name="username" id="username" class="form-control" 
+                                [(ngModel)]="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name" class="text-info">Apellido</label><br>
+                                <input type="text" name="name" id="name" class="form-control"
+                                [(ngModel)]="last_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="text-info">Correo electrónico del trabajo</label><br>
+                                <input type="text" name="email" id="email" class="form-control"
+                                [(ngModel)]="email">
+                            </div>                             
+                            <div class="form-group">
+                                <label for="country" class="text-info">País</label><br>
+                                <input type="text" name="lastname" id="lastname" class="form-control"
+                                [(ngModel)]="country">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="text-info">Número de teléfono</label><br>
+                                <input type="number" name="password" id="password" class="form-control"
+                                [(ngModel)]="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="job" class="text-info">Puesto del trabajo</label><br>
+                                <input type="text" name="job" id="job" class="form-control"
+                                [(ngModel)]="job">
+                            </div>                                                                                                                                                                                                  
+                            <div class="form-group">
+                                <br><input type="submit" name="submit" class="btn btn-info btn-md" value="Inscríbete">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
