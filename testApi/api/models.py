@@ -8,6 +8,5 @@ class Invited(models.Model):
     last_name = models.CharField(max_length=30)
     email = models.EmailField(max_length=30)
     country = models.CharField(max_length=30)
-    phone = models.IntegerField(max_length=30)
+    phone = models.BigIntegerField()
     job = models.CharField(max_length=30)
-
