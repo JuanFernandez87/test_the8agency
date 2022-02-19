@@ -1,0 +1,11 @@
+@font-face {
+    font-family: SharpSansNo1-Bold; 
+    src: url("/assets/fonts/Sharp Sans No1-Bold.otf") format("opentype");
+
+    font-family: SharpSansNo1-BoldItalic; 
+    src: url("/assets/fonts/SharpSansNo1Medium-Regular.woff") format("woff");
+    
+    font-family: Julius;
+    src: url("/assets/fonts/JuliusSansOne-Regular.ttf") format("truetype");
+
+}

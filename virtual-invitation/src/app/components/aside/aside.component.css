@@ -1,0 +1,23 @@
+.body{
+    background-color: green;
+    height: 1193px;
+    max-width: 100%;
+}
+
+.container{
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.description{
+    background-color: white;
+    height: 897px;
+    width: 565px;
+    margin-top: 195px;
+    margin-left: 155px;
+}
+
+.form{
+    margin-left: 101px;
+}

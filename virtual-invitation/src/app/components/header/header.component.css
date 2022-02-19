@@ -1,0 +1,134 @@
+.contenedor{
+    background-image: url("../../../assets/images/Group 4.svg"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+.cont-button{
+    height: 25px;
+    /* width: 34.7%; */
+    width: 500px;
+    margin-top: 4.8%;
+    display: flex; 
+    justify-content: center;
+}
+
+.button{
+    text-align: center;
+    background-color: #C05100;
+    border-radius: 3px;
+    align-items: center;
+    height: 28px;
+    width: 88px;
+    margin-top: -0.1%;
+    display: flex; 
+    justify-content: center;
+    font-family: SharpSansNo1-Bold;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0.93px;
+    text-align: center;
+    line-height: 15px;
+}
+
+.text{
+    position: absolute;
+    height: 173px;
+    width: 66.7%;  
+
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.title{
+    position: relative;
+    font-family: SharpSansNo1-Bold;
+    font-size: 40px;
+    color: #02363D;
+    text-align: center;
+    line-height: 52px;    
+}
+
+.sub-title{
+    font-family: SharpSansNo1-BoldItalic;
+    font-size: 40px;
+    color: #021800;
+    text-align: center;
+    line-height: 52px;
+}
+
+.fecha{
+    font-family: SharpSansNo1-Semibold;
+    font-size: 21px;
+    color: #00373E;
+    text-align: center;
+    line-height: 40px;
+}
+
+@media screen and (min-width:920px) and (max-width:2400px){
+    .contenedor{
+        height: 350px;
+        width: 100%; 
+    }  
+    .text{
+        margin-top: 7.8%;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:920px){
+    .contenedor{
+        height: 350px;
+        width: 100%; 
+    }
+    .cont-button{
+        margin-top: 82px;
+    }
+    .text{
+        margin-top: 133px;  
+    }
+    .title{
+        font-size: 30px; 
+        line-height: 26px;
+    }
+    
+    .sub-title{
+        font-size: 30px;
+        line-height: 26px;
+    }
+    
+    .fecha{
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .contenedor{
+        height: 350px;
+        width: 100%; 
+    }
+    .cont-button{
+        margin-top: 82px;
+    }
+    .text{
+        margin-top: 133px;  
+    }
+    .title{
+        font-size: 20px; 
+        line-height: 26px;
+    }
+    
+    .sub-title{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    .fecha{
+        font-size: 10px;
+        line-height: 26px;
+    }
+}
