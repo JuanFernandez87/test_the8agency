@@ -1,0 +1,204 @@
+.description{
+    background-color: white;
+    height: 897px;
+    width: 565px;
+    margin-top: 37px; 
+}
+.description p{
+    font-family: ProximaNova-Regular;
+    font-size: 16px;
+    color: #405457;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+.img-aurnheimer{
+    height: 71px;
+    width: 74px;
+    margin-top: 24px;
+    margin-left: 6px; 
+}
+.img-rodriguez{
+    height: 71px;
+    width: 74px;
+    margin-top: 33px;
+    margin-left: 6px; 
+}
+.img-astudillo{
+    height: 71px;
+    width: 74px;
+    margin-top: 33px;
+    margin-left: 6px; 
+}
+.full-name{
+    font-family: SharpSansNo1-Semibold;
+    font-size: 20px;
+    color: #02363D;
+    line-height: 26px;
+}
+.img-name{
+    display: flex; 
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+.position{
+    margin-top: 31px;
+    margin-left: 29px;
+}
+.logos{
+    display: flex; 
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+.bitmap{
+    width: 89px;
+    height: 26px;
+}
+.asobanca{
+    width: 83px;
+    height: 29px;
+    margin-left: 14px;
+}
+.ipbf{
+    width: 69px;
+    height: 42px;
+    margin-left: 14px;
+}
+.higtelecom{
+    width: 137px;
+    height: 24px;
+    margin-left: 12px;
+}
+.ebanx{
+    width: 69px;
+    height: 19px;
+    margin-left: 14px;
+}
+.logos-footer{
+    width: 593px;
+    height: 42px;
+    margin-top: 10px;
+}
+@media screen and (min-width:1300px) and (max-width:2400px){
+.container{
+    justify-content: center;
+    display: flex; 
+    flex-wrap: wrap;
+}
+.body{
+    height: 1193px;
+    max-width: 100%;
+}
+.description{
+    height: 897px;
+    width: 565px;
+    margin-top: 37px;
+}
+.img-prado{
+    height: 75px;
+    width: 544px;
+    margin-top: 50px;
+    margin-left: -163px;  
+}
+.bitmap{
+    width: 89px;
+    height: 26px;
+    margin-top: 86px; 
+}
+.asobanca{
+    width: 83px;
+    height: 29px;
+    margin-left: 14px;
+    margin-top: 85px;
+}
+.ipbf{
+    width: 69px;
+    height: 42px;
+    margin-left: 14px;
+    margin-top: 78px;
+}
+.higtelecom{
+    width: 137px;
+    height: 24px;
+    margin-left: 12px;
+    margin-top: 90px;
+}
+.ebanx{
+    width: 69px;
+    height: 19px;
+    margin-left: 14px;
+    margin-top: 95px;
+}
+}
+   
+@media screen and (min-width:480px) and (max-width:1300px){
+.body{
+    height: 1700px;
+}
+.description{
+    height: 800px;
+}
+.column-left{
+    margin-top: 0px;
+    margin-left: 100px;
+} 
+.logos{
+    margin-top: 73px;
+}
+.logos-footer{
+    margin-top: 0px;
+}  
+.column-rigth{
+    margin-left: 100px;
+}
+}
+    
+@media screen and (max-width:480px){
+*{
+    margin-top: 10px;
+    max-width: 100%;
+}
+.body{
+    height: 1630px;
+    max-width: 100%;
+}
+.column-left{
+    margin-top: 0px;
+}
+.logos{
+    margin-top: 0px;
+    justify-content: center;
+}
+.bitmap{
+    width: 89px;
+    height: 26px;
+}
+.asobanca{
+    width: 83px;
+    height: 29px;
+    margin-left: 14px;
+}
+.ipbf{
+    width: 69px;
+    height: 42px;
+    margin-left: 14px;
+}
+.higtelecom{
+    width: 137px;
+    height: 24px;
+    margin-left: 12px;
+}
+.ebanx{
+    width: 69px;
+    height: 19px;
+    margin-left: 14px;
+}
+.description{
+    height: 897px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.img-prado{
+    margin-left: 7px;  
+}
+}
