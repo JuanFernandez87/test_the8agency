@@ -1,18 +1,150 @@
-#body{
-    background-color: orange;
-    min-height: 48.3%;
-    max-width: 32.2%;
+.contenedor{
+    background: #F8F9F9;
 }
 
-#inscription{
-    font-family: "SharpSansNo1-Bold";
+.title h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #02363D;
+    text-align: center;
 }
 
-/* *{
-margin-top: 120px;
-} */
+.field{
+    font-family: SharpSansNo1-Bold;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;    
+}
 
-#box{
-    background: red;
+.field_name{
+    font-family: SharpSansNo1-Semibold;
+    color: #02363D;
+}
+.box{
+    background: #FFFFFF;
     border: 1px solid #68737D;
+
+}
+
+.submit{
+    color: white;
+    background: #02363D;
+}
+
+@media screen and (min-width:1294px) and (max-width:2400px){
+.contenedor{
+    min-height: 822px;
+    max-width: 463px;
+    margin-left: 101px;
+}
+
+.inscription-form{
+    margin-top: 82px;
+}
+
+.title h1{
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 120px;
+}
+
+.field{
+    margin-top: 24px;  
+    margin-left: 48px;
+}
+
+.field_name{
+    font-size: 14px;
+    width: 53px;
+    height: 19px;
+}
+.box{
+    width: 368px;
+    height: 50px;
+    margin-top: 1px;
+}
+
+.submit{
+    width: 368px;
+    height: 50px;
+    margin-top: 35px;
+}
+}
+
+@media screen and (min-width:480px) and (max-width:1294px){
+    .contenedor{
+        width: 85%; 
+        margin-left: 28px;
+    }
+    
+    .inscription-form{
+        margin-top: 50px;
+    }
+    
+    .title h1{
+        font-size: 15px;
+        text-align: center;
+        line-height: 29px;
+    }
+    
+    .field{
+        margin-top: 15px;   
+        margin-left: 48px;
+    }
+    
+    .field_name{
+        font-size: 14px;
+        width: 53px;
+        height: 19px;
+    }
+    .box{
+        width: 76%; 
+        height: 28px;
+        margin-top: 1px;
+    }
+    
+    .submit{
+        width: 76%; 
+        height: 28px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .contenedor{
+        width: 85%; 
+        margin-left: 28px;
+        height: 540px;
+    }
+    
+    .inscription-form{
+        margin-top: 20px;
+    }
+    
+    .title h1{
+        font-size: 15px;
+        text-align: center;
+        line-height: 29px;
+    }
+    
+    .field{
+        margin-top: 15px;   
+        margin-left: 48px;
+    }
+    
+    .field_name{
+        font-size: 14px;
+        width: 53px;
+        height: 19px;
+    }
+    .box{
+        width: 76%; 
+        height: 28px;
+        margin-top: 1px;
+    }
+    
+    .submit{
+        width: 76%; 
+        height: 28px;
+        margin-top: 10px;
+    }
 }

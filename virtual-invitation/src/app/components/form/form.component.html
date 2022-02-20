@@ -1,34 +1,46 @@
-<body id="body">
-    <div id="inscription">
-        <form id="inscription-form" (ngSubmit)="onCreate()" method="post">
-            <h3>¡Inscríbite y reserva tu lugar ahora!</h3>
-            <div>
-                <label for="name">Nombre</label>
-                <input id="box" type="text" name="username" id="username" [(ngModel)]="name">
+<body>
+    <div class="contenedor">
+        <form class="inscription-form" (ngSubmit)="onCreate()" method="post">
+            <div class="title">
+                <h1>¡Inscríbite y reserva tu lugar ahora!</h1>
             </div>
-            <div>
-                <label for="last_name">Apellido</label>
-                <input type="text" name="name" id="name" [(ngModel)]="last_name">
+            <div class="field" style="margin-top: 48px;">                
+                <label class="field_name" for="name">Nombre</label><br>
+                <input class="box" type="text" name="name" id="name" [(ngModel)]="name">
             </div>
-            <div>
-                <label for="email">Correo electrónico del trabajo</label><br>
-                <input type="text" name="email" id="email" [(ngModel)]="email">
+            
+            <div class="field">
+                <label class="field_name" for="last_name">Apellido</label><br>
+                <input class="box" type="text" name="last_name" id="last_name" [(ngModel)]="last_name">
+            </div>
+            
+            <div class="field">
+                <label class="field_name" for="email">Correo electrónico del trabajo</label>
+                <input class="box" type="text" name="email" email="email" [(ngModel)]="email">
             </div>                             
-            <div>
-                <label for="country">País</label>
-                <input type="text" name="lastname" id="lastname" [(ngModel)]="country">
+            
+            <div class="field">
+                <label class="field_name" for="country">País</label><br>
+                <select class="box" name="country" id="country" [(ngModel)]="country">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil" selected>Brasil</option>
+                    <option value="Perú">Perú</option>
+                  </select>
             </div>
-            <div>
-                <label for="phone">Número de teléfono</label>
-                <input type="number" name="password" id="password" [(ngModel)]="phone">
+            
+            <div class="field">
+                <label class="field_name" for="phone">Número de teléfono</label><br>
+                <input class="box" type="phone" name="phone" id="phone" [(ngModel)]="phone">
             </div>
-            <div>
-                <label for="job">Puesto del trabajo</label><br>
-                <input type="text" name="job" id="job" [(ngModel)]="job">
-            </div>                                                                                                                                                                                                  
-            <div>
-                <input type="submit" name="submit" value="Inscríbete">
+            
+            <div class="field">
+                <label class="field_name" for="job">Puesto del trabajo</label><br>
+                <input class="box" type="text" name="job" id="job" [(ngModel)]="job">
+            </div>                                                           
+
+            <div class="field">
+                <input class="submit" type="submit" name="submit" value="Inscríbete">
             </div>
         </form>
-    </div>
+    </div>   
 </body>
