@@ -1,27 +1,28 @@
 <body>
     <div class="contenedor">
-        <form class="inscription-form" (ngSubmit)="onCreate()" method="post">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" class="inscription-form" method="post">
             <div class="title">
                 <h1>¡Inscríbite y reserva tu lugar ahora!</h1>
             </div>
+
             <div class="field" style="margin-top: 48px;">                
-                <label class="field_name" for="name">Nombre</label><br>
-                <input class="box" type="text" name="name" id="name" [(ngModel)]="name">
+                <label class="field_name">Nombre</label><br>
+                <input class="box" type="text" formControlName="name">
             </div>
             
             <div class="field">
-                <label class="field_name" for="last_name">Apellido</label><br>
-                <input class="box" type="text" name="last_name" id="last_name" [(ngModel)]="last_name">
+                <label class="field_name">Apellido</label><br>
+                <input class="box" type="text" formControlName="last_name">
             </div>
             
             <div class="field">
-                <label class="field_name" for="email">Correo electrónico del trabajo</label>
-                <input class="box" type="text" name="email" email="email" [(ngModel)]="email">
+                <label class="field_name">Correo electrónico del trabajo</label>
+                <input class="box" type="text" formControlName="email">
             </div>                             
             
             <div class="field">
-                <label class="field_name" for="country">País</label><br>
-                <select class="box" name="country" id="country" [(ngModel)]="country">
+                <label class="field_name">País</label><br>
+                <select class="box" formControlName="country">
                     <option value="Argentina">Argentina</option>
                     <option value="Brasil" selected>Brasil</option>
                     <option value="Perú">Perú</option>
@@ -29,17 +30,19 @@
             </div>
             
             <div class="field">
-                <label class="field_name" for="phone">Número de teléfono</label><br>
-                <input class="box" type="phone" name="phone" id="phone" [(ngModel)]="phone">
+                <label class="field_name">Número de teléfono</label><br>
+                <input class="box" type="phone" formControlName="phone">
             </div>
             
             <div class="field">
-                <label class="field_name" for="job">Puesto del trabajo</label><br>
-                <input class="box" type="text" name="job" id="job" [(ngModel)]="job">
+                <label class="field_name">Puesto del trabajo</label><br>
+                <input class="box" type="text" formControlName="job">
             </div>                                                           
 
             <div class="field">
-                <input class="submit" type="submit" name="submit" value="Inscríbete">
+                <button class="submit" type="submit">
+                    Inscríbete
+                </button>
             </div>
         </form>
     </div>   

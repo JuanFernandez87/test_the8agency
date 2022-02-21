@@ -1,11 +1,20 @@
 @font-face {
     font-family: SharpSansNo1-Bold; 
-    src: url("/assets/fonts/Sharp Sans No1-Bold.otf") format("opentype");
-
-    font-family: SharpSansNo1-BoldItalic; 
-    src: url("/assets/fonts/SharpSansNo1Medium-Regular.woff") format("woff");
-    
-    font-family: Julius;
-    src: url("/assets/fonts/JuliusSansOne-Regular.ttf") format("truetype");
-
+    src: url("/assets/fonts/SharpSansNo1-Bold.woff") format("woff");
+}  
+@font-face {
+    font-family: SharpSansNo1-BoldItalic;
+    src: url("/assets/fonts/news/Sharp Sans Bold Italic.otf") format("opentype");
+}
+@font-face {
+    font-family: SharpSansNo1-Semibold;
+    src: url("/assets/fonts/news/Sharp Sans Semibold.otf") format("opentype");
+}
+@font-face {
+    font-family: ProximaNova-Regular;
+    src: url("/assets/fonts/proximanova-regular-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: SharpSansNo1-Medium;
+    src: url("/assets/fonts/news/Sharp Sans Medium.otf") format("opentype");
 }
