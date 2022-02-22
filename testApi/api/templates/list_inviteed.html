@@ -1,0 +1,45 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block content %}
+<body>
+   <div class="container-lg">
+      <div class="title">
+         <h2>Listado de participantes</h2>
+      </div>
+         <table class="table">
+            <thead> 
+               <tr>
+                  <th> # </th>
+                  <th> Nombre </th>
+                  <th> Apellido </th>
+                  <th> Correo electrónico del trabajo </th>
+                  <th> País </th>
+                  <th> Número de télefono </th>
+                  <th> Puesto de trabajo </th>
+               </tr>                   
+            </thead>
+            <tbody>
+            {% for p in inviteeds %}
+               <tr>
+                  <td>{{ forloop.counter }}</td>
+                  <td>{{ p.last_name }}</td>
+                  <td>{{ p.name }}</td>
+                  <td>{{ p.email }}</td>
+                  <td>{{ p.country }}</td>
+                  <td>{{ p.phone }}</td>
+                  <td>{{ p.job }}</td>
+               </tr>
+            {% endfor %}
+            </tbody>
+         </table>
+   </div>
+</body>
+{% endblock %}
