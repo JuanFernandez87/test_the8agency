@@ -1,42 +1,83 @@
-<body>
+
     <div class="contenedor">
         <form [formGroup]="form" (ngSubmit)="onSubmit()" class="inscription-form" method="post">
-            <div class="title">
+        <div style="margin-top: 10px;">
+            <div class="title" style="margin-top: 10px;">
                 <h1>¡Inscríbite y reserva tu lugar ahora!</h1>
             </div>
 
             <div class="field" style="margin-top: 48px;">                
                 <label class="field_name">Nombre</label><br>
                 <input class="box" type="text" formControlName="name">
+                <div class="error" *ngIf="form.controls['name'].errors?.['required'] && form.controls['name'].touched">
+                    El campo nombre es requerido
+                </div> 
+
+                <div class="error" *ngIf="form.controls['name'].errors?.['minlength'] && form.controls['name'].touched">
+                    El campo debe tener al menos 3 caracteres
+                </div>                 
             </div>
             
             <div class="field">
                 <label class="field_name">Apellido</label><br>
                 <input class="box" type="text" formControlName="last_name">
+                <div class="error" *ngIf="form.controls['last_name'].errors?.['required'] && form.controls['last_name'].touched">
+                    El campo Apellido es requerido
+                </div> 
+
+                <div class="error" *ngIf="form.controls['last_name'].errors?.['minlength'] && form.controls['last_name'].touched">
+                    El campo debe tener al menos 3 caracteres
+                </div> 
             </div>
-            
+        
             <div class="field">
-                <label class="field_name">Correo electrónico del trabajo</label>
+                <label class="field_name">Correo electrónico del trabajo</label><br>
                 <input class="box" type="text" formControlName="email">
+                <div class="error" *ngIf="form.controls['email'].errors?.['required'] && form.controls['email'].touched">
+                    El campo correo electrónico es requerido
+                </div> 
             </div>                             
-            
+    
             <div class="field">
                 <label class="field_name">País</label><br>
-                <select class="box" formControlName="country">
-                    <option value="Argentina">Argentina</option>
-                    <option value="Brasil" selected>Brasil</option>
+                <select class="box" formControlName="country" required>
+                    <option selected value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Paraguay">Paraguay</option>
                     <option value="Perú">Perú</option>
+                    <option value="Uruguay">Uruguay</option>                                                         
+                    <option value="Otro">Otro</option>
                   </select>
+                  <div class="error" *ngIf="form.controls['country'].errors?.['required'] && form.controls['country'].touched">
+                    El campo país es requerido
+                </div> 
             </div>
             
             <div class="field">
                 <label class="field_name">Número de teléfono</label><br>
                 <input class="box" type="phone" formControlName="phone">
+                <div class="error" *ngIf="form.controls['phone'].errors?.['required'] && form.controls['phone'].touched">
+                    El campo número de teléfono es requerido
+                </div> 
+                <div class="error" *ngIf="form.controls['phone'].errors?.['pattern'] && form.controls['phone'].touched">
+                    El campo debe tener solo números
+                </div> 
             </div>
             
             <div class="field">
                 <label class="field_name">Puesto del trabajo</label><br>
                 <input class="box" type="text" formControlName="job">
+                <div class="error" *ngIf="form.controls['job'].errors?.['required'] && form.controls['job'].touched">
+                    El campo puesto de trabajo es requerido
+                </div> 
+
+                <div class="error" *ngIf="form.controls['job'].errors?.['minlength'] && form.controls['job'].touched">
+                    El campo debe tener al menos 3 caracteres
+                </div> 
             </div>                                                           
 
             <div class="field">
@@ -44,6 +85,6 @@
                     Inscríbete
                 </button>
             </div>
+        </div>
         </form>
     </div>   
-</body>

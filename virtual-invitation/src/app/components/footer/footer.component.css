@@ -10,7 +10,6 @@
 .sub{
     display: flex; 
     flex-wrap: wrap;
-    margin-top: 24px;
 }
 .año{
     font-family: ProximaNova-Regular;
@@ -22,15 +21,18 @@
     width: 60px;
 }
 
-@media screen and (min-width:1294px) and (max-width:2400px){
+@media screen and (min-width:920px) and (max-width:2400px){
 .año{
-    margin-left: 475px;
+    margin-left: 240px;
 }
 .logos{
     margin-left: 760px;
 }
+.sub{
+    margin-top: 24px;
 }
-@media screen and (min-width:480px) and (max-width:1294px){
+}
+@media screen and (min-width:480px) and (max-width:920px){
 .sub{
     display: flex; 
     flex-wrap: wrap;
@@ -45,6 +47,10 @@
 .logos{
     margin-left: 0px;
     margin-top: 10px;
+}
+.logos-footer{
+    width: 100%;
+    margin-left: 0px;
 }
 }
         

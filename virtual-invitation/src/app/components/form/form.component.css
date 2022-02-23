@@ -1,7 +1,11 @@
 .contenedor{
     background: #F8F9F9;
 }
-
+.error{
+    color: tomato;
+    font-size: 15px;
+    margin-top: 5px;
+}
 .title h1{
     font-family: SharpSansNo1-Bold;
     color: #02363D;
@@ -29,15 +33,17 @@
     background: #02363D;
 }
 
-@media screen and (min-width:1294px) and (max-width:2400px){
+@media screen and (min-width:920px) and (max-width:2400px){
 .contenedor{
-    min-height: 822px;
+    min-height: 800px;
     max-width: 463px;
     margin-left: 101px;
 }
 
 .inscription-form{
     margin-top: 82px;
+    margin-left: -25px;
+    margin-right: 20px;
 }
 
 .title h1{
@@ -72,9 +78,9 @@
 }
 }
 
-@media screen and (min-width:480px) and (max-width:1294px){
+@media screen and (min-width:480px) and (max-width:920px){
     .contenedor{
-        width: 85%; 
+        width: 48%; 
         margin-left: 28px;
     }
     
@@ -99,13 +105,13 @@
         height: 19px;
     }
     .box{
-        width: 76%; 
+        width: 88%; 
         height: 28px;
         margin-top: 1px;
     }
     
     .submit{
-        width: 76%; 
+        width: 88%; 
         height: 28px;
         margin-top: 10px;
     }

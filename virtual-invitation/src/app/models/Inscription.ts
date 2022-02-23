@@ -4,10 +4,10 @@ export class Inscription {
     last_name: string;
     email: string;
     country: string;
-    phone: number;
+    phone: string;
     job: string;
 
-    constructor(name:string, last_name:string, email:string, country:string, phone:number, job:string) {
+    constructor(name:string, last_name:string, email:string, country:string, phone:string, job:string) {
         this.name = name;
         this.last_name = last_name;
         this.email = email;
