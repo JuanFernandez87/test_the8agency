@@ -39,7 +39,7 @@ class InvitedView(View):
                                     phone = jd['phone'],
                                     job = jd['job']
                     )
-                    datos = {'message': 'Success'}
+                    datos = {'message': 'La inscripción se realizo correctamente'}
                     return JsonResponse(datos)                
             else:
                 datos = {'message': 'Error en la validacion de los datos'}
