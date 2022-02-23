@@ -62,7 +62,6 @@ export class FormComponent implements OnInit {
           this.form.value['phone'],
           this.form.value['job']);
         this.inscriptionService.save(this.data).subscribe(data => { 
-          console.log('prueba', data);
           window.alert(data['message'])
           if (data['message'] == 'La inscripción se realizo correctamente'){
             window.location.reload();  
