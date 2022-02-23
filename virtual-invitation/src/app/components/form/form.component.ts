@@ -36,7 +36,8 @@ export class FormComponent implements OnInit {
         Validators.required
       ]),
       phone: new FormControl(null, [
-        Validators.required        
+        Validators.required,
+        Validators.pattern('[- +()0-9]{10,}')      
       ]),
       job: new FormControl(null, [
         Validators.required, 
