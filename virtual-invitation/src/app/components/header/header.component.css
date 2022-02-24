@@ -27,7 +27,7 @@
     display: flex; 
     justify-content: center;
     font-family: SharpSansNo1-Bold;
-    font-size: 13px;
+
     color: #FFFFFF;
     letter-spacing: 0.93px;
     text-align: center;
@@ -35,9 +35,9 @@
 }
 
 .text{
-    position: absolute;
-    height: 173px;
-    width: 66.7%;  
+
+
+ 
 
     justify-content: center;
     flex-wrap: wrap;
@@ -76,7 +76,13 @@
     }  
     .text{
         margin-top: 7.8%;
+        position: absolute;
+        width: 66.7%; 
+        height: 173px;
     }
+.button{
+    font-size: 13px;
+}
 }
 
 @media screen and (min-width:480px) and (max-width:920px){
@@ -87,8 +93,14 @@
     .cont-button{
         margin-top: 82px;
     }
+    .button{
+        font-size: 13px;
+    }
     .text{
         margin-top: 133px;  
+        position: absolute;
+        width: 66.7%; 
+        height: 173px;
     }
     .title{
         font-size: 30px; 
@@ -107,28 +119,29 @@
 }
 
 @media screen and (max-width:360px){
-    .contenedor{
-        height: 350px;
-        width: 100%; 
-    }
-    .cont-button{
-        margin-top: 82px;
-    }
-    .text{
-        margin-top: 133px;  
-    }
-    .title{
-        font-size: 20px; 
-        line-height: 26px;
-    }
-    
-    .sub-title{
-        font-size: 20px;
-        line-height: 26px;
-    }
-    
-    .fecha{
-        font-size: 10px;
-        line-height: 26px;
-    }
+.contenedor{
+    height: 400px;
+    width: 100%; 
+}
+.cont-button{
+    margin-top: 82px;
+}
+.text{
+    margin-top: 133px;  
+    width: 90%; 
+}
+.title{
+    font-size: 10px; 
+    line-height: 26px;
+}
+
+.sub-title{
+    font-size: 10px;
+    line-height: 26px;
+}
+
+.fecha{
+    font-size: 10px;
+    line-height: 26px;
+}
 }

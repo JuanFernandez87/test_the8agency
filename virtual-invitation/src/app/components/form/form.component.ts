@@ -37,7 +37,8 @@ export class FormComponent implements OnInit {
       ]),
       phone: new FormControl(null, [
         Validators.required,
-        Validators.pattern('[- +()0-9]{10,}')      
+        Validators.pattern('[- +()0-9]{10,}'),
+        Validators.minLength(10)      
       ]),
       job: new FormControl(null, [
         Validators.required, 
@@ -60,9 +61,13 @@ export class FormComponent implements OnInit {
           this.form.value['country'],
           this.form.value['phone'],
           this.form.value['job']);
-        this.inscriptionService.save(this.data).subscribe();
-        window.alert('El registro se completo exitosamente');
-        window.location.reload();
+        this.inscriptionService.save(this.data).subscribe(data => { 
+          window.alert(data['message'])
+          if (data['message'] == 'La inscripción se realizo correctamente'){
+            window.location.reload();  
+          }
+        });
+        
     }
   }
   }

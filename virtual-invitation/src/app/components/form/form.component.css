@@ -79,82 +79,77 @@
 }
 
 @media screen and (min-width:480px) and (max-width:920px){
-    .contenedor{
-        width: 48%; 
-        margin-left: 28px;
-    }
     
-    .inscription-form{
-        margin-top: 50px;
-    }
-    
-    .title h1{
-        font-size: 20px;
-        text-align: center;
-        line-height: 29px;
-    }
-    
-    .field{
-        margin-top: 15px;   
-        margin-left: 48px;
-    }
-    
-    .field_name{
-        font-size: 14px;
-        width: 53px;
-        height: 19px;
-    }
-    .box{
-        width: 88%; 
-        height: 28px;
-        margin-top: 1px;
-    }
-    
-    .submit{
-        width: 88%; 
-        height: 28px;
-        margin-top: 10px;
-    }
+.inscription-form{
+    margin-top: 50px;
+}
+
+.title h1{
+    font-size: 20px;
+    text-align: center;
+    line-height: 29px;
+}
+
+.field{
+    margin-top: 15px;   
+    margin-left: 48px;
+}
+
+.field_name{
+    font-size: 14px;
+    width: 53px;
+    height: 19px;
+}
+.box{
+    width: 88%; 
+    height: 28px;
+    margin-top: 1px;
+}
+
+.submit{
+    width: 88%; 
+    height: 28px;
+    margin-top: 10px;
+}
 }
 
 @media screen and (max-width:480px){
-    .contenedor{
-        width: 85%; 
-        margin-left: 28px;
-        height: 540px;
-    }
-    
-    .inscription-form{
-        margin-top: 20px;
-    }
-    
-    .title h1{
-        font-size: 15px;
-        text-align: center;
-        line-height: 29px;
-    }
-    
-    .field{
-        margin-top: 15px;   
-        margin-left: 48px;
-    }
-    
-    .field_name{
-        font-size: 14px;
-        width: 53px;
-        height: 19px;
-    }
-    .box{
-        width: 76%; 
-        height: 28px;
-        margin-top: 1px;
-    }
-    
-    .submit{
-        width: 76%; 
-        height: 28px;
-        margin-top: 10px;
-    }
+.contenedor{
+    width: 98%; 
+    height: 600px;
+}
+
+.inscription-form{
+    margin-top: 20px;
+}
+
+.title h1{
+    font-size: 15px;
+    text-align: center;
+    line-height: 29px;
+}
+
+.field{
+    margin-top: 15px;   
+    margin-left: 48px;
+}
+
+.field_name{
+    font-size: 14px;
+    width: 53px;
+    height: 19px;
+}
+.box{
+    width: 76%; 
+    height: 28px;
+    margin-top: 1px;
+}
+
+.submit{
+    width: 76%; 
+    height: 28px;
+    margin-top: 10px;
+}
 }
 
 input.ng-invalid.ng-touched, 

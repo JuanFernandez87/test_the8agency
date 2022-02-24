@@ -29,7 +29,7 @@ class InvitedView(View):
                     Invited.objects.get(email=jd['email'].lower()) 
                     datos = {'message': 'El mail ingresado ya se encuentra registrado'}
                     return JsonResponse(datos) 
-                except Exception:
+                except Invited.DoesNotExist:
                     Invited.objects.create(
                                     name = jd['name'], 
                                     last_name = jd['last_name'],
