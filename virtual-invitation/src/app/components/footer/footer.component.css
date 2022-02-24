@@ -1,11 +1,8 @@
-.body{
-    height: 160px;
-    max-width: 100%;
-    bottom:0px;
-}
 .container{
     display: flex; 
     flex-wrap: wrap;
+    max-width: 100%;
+    margin-top: 100px;
 }
 .sub{
     display: flex; 
@@ -20,6 +17,18 @@
     height: 20px;
     width: 60px;
 }
+
+@media screen and (min-width:2400px){
+    .año{
+        margin-left: 620px;
+    }
+    .logos{
+        margin-left: 760px;
+    }
+    .sub{
+        margin-top: 24px;
+    }
+    }
 
 @media screen and (min-width:920px) and (max-width:2400px){
 .año{
@@ -57,6 +66,9 @@
 @media screen and (max-width:480px){
 .body{
     margin-top: 70px;
+}
+.container{
+    margin-top: 225px;
 }
 .sub{
     display: flex; 
