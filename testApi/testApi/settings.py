@@ -11,7 +11,13 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-import os
+from decouple import config
+
+DB_USER = config('DB_USER')
+DB_PASSWORD = config('DB_PASSWORD')
+DB_HOST = config('DB_HOST')
+DB_NAME = config('DB_NAME')
+DB_PORT = config('DB_PORT')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -80,12 +86,12 @@ WSGI_APPLICATION = 'testApi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd5p77mv2pboesd',
-        'USER': 'bezjsnbqdvoodl',
-        'PASSWORD': 'ba06aace41254dd3bbeb0727373b31ea5528f1d4fc5a8158cf82f4c98fda009d',
-        'HOST': 'ec2-23-23-164-251.compute-1.amazonaws.com',
-        'PORT': 5432,   
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': DB_NAME,
+        'USER': DB_USER,
+        'PASSWORD': DB_PASSWORD,
+        'HOST': DB_HOST,
+        'PORT': DB_PORT,   
     }
 }
 
