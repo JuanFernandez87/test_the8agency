@@ -27,7 +27,7 @@ To solve this challenge, a project was created that, through the backend, a pers
 - Create a database with the name the8agency
 
 #### 3 He passed
-- Rename the file template.env
+- Rename the file template.env to .env
 - Set password on file .env
 - Configure the user in the file .env
 
