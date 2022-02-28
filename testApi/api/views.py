@@ -1,10 +1,6 @@
-import email
 from django.shortcuts import render
 from django.http import JsonResponse
-from django.utils.decorators import method_decorator
-from django.views import View
-from django.views.decorators.csrf import csrf_exempt
-from django.views.generic import View
+from rest_framework.views import APIView
 from .models import Invited
 from api.forms import CreateForm
 from testApi.wsgi import *
@@ -12,12 +8,7 @@ import json
 
 # Create your views here.
 
-class InvitedView(View):
-    # Metodo que se ejecuta cada vez que hacemos una peticion
-    @method_decorator(csrf_exempt)
-    def dispatch(self, request, *args, **kwargs):
-        return super().dispatch(request, *args, **kwargs)
-
+class InvitedView(APIView):
     # Metodo POST para registrar a un invitado
     def post(self, request):
         if request.method == 'POST':  
@@ -46,9 +37,9 @@ class InvitedView(View):
                 return JsonResponse(datos)
         else:
             datos = {'message': 'Error'}
-            return JsonResponse(datos)
+            return JsonResponse(datos)   
 
-def list_inviteed(request):
+def inviteed_list(request):
     """
     Función vista para la página que muestra el listado de participantes al evento
     """
