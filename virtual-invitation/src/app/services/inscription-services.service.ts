@@ -8,12 +8,12 @@ import { Inscription } from '../models/Inscription';
 })
 export class InscriptionService {
 
-  URL = "http://127.0.0.1:8000/api/";
+  URL = "https://jfernandez19.pythonanywhere.com/";
 
   constructor(private httpClient: HttpClient) { }
 
   public save(inscription: Inscription): Observable<any> {
     console.log('Contenido inspription', inscription)
-    return this.httpClient.post<Inscription>(this.URL + 'invitees/', inscription);
+    return this.httpClient.post<Inscription>(this.URL + 'inviteed/', inscription);
   }
 }
